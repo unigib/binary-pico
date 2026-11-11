@@ -56,3 +56,9 @@ For addition, press the **A button** to cycle between unsigned, signed
 magnitude, one's complement, and two's complement modes. Subtraction is always
 shown as the two's-complement operation `A - B = A + (-B)`. Results outside
 the selected representation's range are reported as overflow.
+
+### `time-travel-car.py`
+
+Animates an original, pixel-art retro-futuristic car across the Pico Display 2.
+Copy the file to the Pico and run it with the same Pimoroni MicroPython
+firmware. The animation loops continuously.

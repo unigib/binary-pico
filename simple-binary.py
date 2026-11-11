@@ -2,7 +2,7 @@ from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY_2, PEN_RGB565
 
 
 # Change this value to display a different 8-bit number.
-value = 0b00000010
+value = 0b10000010
 
 display = PicoGraphics(
     display=DISPLAY_PICO_DISPLAY_2,

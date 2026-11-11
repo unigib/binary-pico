@@ -4,7 +4,7 @@ from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY_2, PEN_RGB565
 
 
 # Change this signed decimal number to see how each format encodes it.
-number = -20
+number = -100
 
 MODES = (
     "8-bit unsigned",
@@ -17,6 +17,12 @@ RANGES = (
     "Range: -127 to 127",
     "Range: -127 to 127",
     "Range: -128 to 127",
+)
+MODE_INFO = (
+    "MSB weight: +128",
+    "MSB is sign; lower bits are magnitude",
+    "Positive bits=binary; negatives invert",
+    "MSB weight: -128",
 )
 
 button_a = Pin(12, Pin.IN, Pin.PULL_UP)
@@ -106,6 +112,7 @@ def draw_screen():
 
     display.set_pen(muted)
     display.text(note, 12, 220, width - 24, 1)
+    display.text(MODE_INFO[mode_index], 12, 230, width - 24, 1)
 
     display.update()
 

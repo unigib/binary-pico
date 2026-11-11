@@ -6,7 +6,7 @@ from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY_2, PEN_RGB565
 # Edit these values in Thonny before running the script.
 number_a = 13
 number_b = 5
-operation = "subtract"  # Use "add" or "subtract".
+operation = "add"  # Use "add" or "subtract".
 
 MODES = (
     "8-bit unsigned",
